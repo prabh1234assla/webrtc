@@ -1,8 +1,14 @@
+"use client";
 
-export default function Home() {
+import { FC } from "react";
+import VideoDisplayer from "@/components/VideoDisplayer";
+
+const Home: FC<{}> = ({ }) => {
   return (
-    <main >
-    
+    <main>
+      <VideoDisplayer />
     </main>
   );
 }
+
+export default Home;
