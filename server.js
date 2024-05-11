@@ -2,10 +2,11 @@ const { createServer } = require("http");
 const { parse } = require("url");
 const next = require("next");
 
+console.log(process.env.APP_ID)
 const app_initialization = {
   dev: process.env.NODE_ENV !== "production",
   hostname: "localhost",
-  port: 3000,
+  port: process.env.PORT
 };
 
 const app = next(app_initialization);

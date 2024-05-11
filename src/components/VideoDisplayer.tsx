@@ -2,7 +2,7 @@
 
 import { FC, useEffect, useRef } from "react";
 import VideoComponent from "./VideoComponent";
-import LOCALSTREAM_OUTPUTSTREAM from "./LOCALSTREAM_OUTPUTSTREAM";
+import LOCALSTREAM_OUTPUTSTREAM from "./LOCALSTREAM_OUTPUTSTREAM.ts";
 
 const VideoDisplayer: FC<{}> = () => {
     const vid_1 = useRef<HTMLVideoElement>(null);
